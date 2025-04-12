@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-neutral-100 py-16">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="space-y-4">
             <div className="flex items-end">
               <span className="text-3xl font-bold">
