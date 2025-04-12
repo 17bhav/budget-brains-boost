@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Instagram } from 'lucide-react';
+import { Instagram, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -59,25 +59,27 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Connect</h3>
             <ul className="space-y-2">
               <li>
-                <a href="mailto:bhavika@budgetandbrains.com" className="text-neutral-600 hover:text-coral-500 transition-colors">
-                  bhavika@budgetandbrains.com
+                <a href="mailto:bhavika@budgetandbrains.com" className="text-neutral-600 hover:text-coral-500 transition-colors flex items-center gap-2 break-all">
+                  <Mail size={18} />
+                  <span className="inline-block">bhavika@budgetandbrains.com</span>
                 </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/budgetandbrains_/" className="text-neutral-600 hover:text-coral-500 transition-colors flex items-center gap-2">
                   <Instagram size={18} />
-                  Instagram
+                  <span>Instagram</span>
                 </a>
               </li>
               <li>
-                <a href="https://linkedin.com/company/budgetandbrains" className="text-neutral-600 hover:text-coral-500 transition-colors">
-                  LinkedIn
+                <a href="https://linkedin.com/company/budgetandbrains" className="text-neutral-600 hover:text-coral-500 transition-colors flex items-center gap-2">
+                  <Linkedin size={18} />
+                  <span>LinkedIn</span>
                 </a>
               </li>
             </ul>
           </div>
 
-          <div>
+          <div className="md:pl-6">
             <h3 className="font-semibold text-lg mb-4">Start Now</h3>
             <Link to="/contact" className="btn btn-primary">
               Book a Free Audit
