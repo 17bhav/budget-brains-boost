@@ -23,7 +23,7 @@ const AboutPage = () => {
               <h2 className="text-3xl font-semibold mb-6">Our Story</h2>
               <div className="space-y-4 text-lg">
                 <p>
-                  Budget & Brains was born from frustration. After years of watching startups waste precious funding on ineffective marketing, our founders decided there had to be a better way.
+                  Budget & Brains was born from frustration. After years of watching startups waste precious funding on ineffective marketing, we decided there had to be a better way.
                 </p>
                 <p>
                   Many early-stage companies struggle with the same challenges: limited budgets, pressure to show growth, and confusion about where to focus their marketing efforts. Too often, they end up spending too much on the wrong channels or hiring expensive agencies that don't understand the unique constraints of startup life.
@@ -72,27 +72,6 @@ const AboutPage = () => {
               <p className="text-center text-lg mb-0">
                 We've been in your shoes. We know the pressure to show results and the frustration of seeing resources squandered on ineffective tactics. That's why we're committed to helping startups grow smarter, not just more expensively.
               </p>
-            </div>
-
-            <div className="mb-16">
-              <h2 className="text-3xl font-semibold mb-6">Our Team</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="w-40 h-40 bg-neutral-200 rounded-full mx-auto mb-4"></div>
-                  <h3 className="text-xl font-medium">Alex Rivera</h3>
-                  <p className="text-neutral-600">Founder & Strategic Lead</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-40 h-40 bg-neutral-200 rounded-full mx-auto mb-4"></div>
-                  <h3 className="text-xl font-medium">Sarah Chen</h3>
-                  <p className="text-neutral-600">Growth & Analytics Director</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-40 h-40 bg-neutral-200 rounded-full mx-auto mb-4"></div>
-                  <h3 className="text-xl font-medium">Marcus Osei</h3>
-                  <p className="text-neutral-600">Channel Optimization Lead</p>
-                </div>
-              </div>
             </div>
 
             <div className="text-center">

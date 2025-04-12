@@ -13,9 +13,9 @@ const HomePage = () => {
       <Hero />
       <ValueProposition />
       <Services />
-      <HowWeWork />
       <Testimonials />
       <PricingPreview />
+      <HowWeWork />
       <CTASection />
     </main>
   );

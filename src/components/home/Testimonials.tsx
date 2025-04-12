@@ -6,22 +6,22 @@ const testimonials = [
   {
     id: 1,
     content: "Budget & Brains transformed our marketing approach. We reduced spend by 30% while doubling our conversion rate in just 3 months.",
-    author: "Sarah Johnson",
-    role: "Founder, TechStart",
+    author: "Sana Nath",
+    role: "Communication Head, The Knack",
     rating: 5
   },
   {
     id: 2,
     content: "Their freelancer matching service saved us thousands. We got top-tier talent at startup-friendly rates without sacrificing quality.",
-    author: "Michael Chen",
-    role: "CMO, Finova",
+    author: "Chaitanya Garg",
+    role: "Co-Founder, Vrindavan Handlooms",
     rating: 5
   },
   {
     id: 3,
     content: "The marketing audit revealed critical inefficiencies in our funnel. The recommendations were practical and immediately actionable.",
-    author: "Priya Sharma",
-    role: "CEO, Wellnest",
+    author: "Kritika Saini",
+    role: "Director, GNH Group",
     rating: 5
   }
 ];

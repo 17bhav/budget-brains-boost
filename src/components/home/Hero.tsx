@@ -15,7 +15,7 @@ const Hero = () => {
             Smart Marketing. <br className="hidden sm:block" />
             <span className="text-coral-500">Scalable Growth.</span>
           </h1>
-          <p className="subtitle animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <p className="subtitle mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
             We help you market better without burning your budget.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-10 animate-fade-in" style={{ animationDelay: '0.3s' }}>
@@ -37,11 +37,18 @@ const Hero = () => {
         <div className="container text-center">
           <p className="text-neutral-600 mb-6">Trusted by innovative startups</p>
           <div className="flex flex-wrap justify-center gap-8 md:gap-16">
-            {/* These would be replaced with actual logos */}
-            <div className="w-24 h-12 bg-neutral-300/30 rounded flex items-center justify-center text-neutral-500 font-semibold">Logo 1</div>
-            <div className="w-24 h-12 bg-neutral-300/30 rounded flex items-center justify-center text-neutral-500 font-semibold">Logo 2</div>
-            <div className="w-24 h-12 bg-neutral-300/30 rounded flex items-center justify-center text-neutral-500 font-semibold">Logo 3</div>
-            <div className="w-24 h-12 bg-neutral-300/30 rounded flex items-center justify-center text-neutral-500 font-semibold">Logo 4</div>
+            <div className="w-28 h-16 flex items-center justify-center">
+              <img src="/lovable-uploads/8216d696-de94-4a5e-8ed3-b11a3334d602.png" alt="The Knack" className="max-h-full w-auto" />
+            </div>
+            <div className="w-32 h-16 flex items-center justify-center">
+              <img src="/lovable-uploads/b1374e63-2dca-4290-b104-55720919c1c6.png" alt="Vrindavan Handlooms" className="max-h-full w-auto" />
+            </div>
+            <div className="w-28 h-16 flex items-center justify-center">
+              <img src="/lovable-uploads/cfcaacd1-e119-4500-b9dc-eb6dd70895a6.png" alt="SUKOON" className="max-h-full w-auto" />
+            </div>
+            <div className="w-28 h-16 flex items-center justify-center">
+              <img src="/lovable-uploads/b941cf0b-62d3-404d-beb3-98ce2a95bec9.png" alt="GNH Group" className="max-h-full w-auto" />
+            </div>
           </div>
         </div>
       </div>
