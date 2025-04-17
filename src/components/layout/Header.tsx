@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -11,10 +10,19 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleNavClick = () => {
+    scrollToTop();
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="py-6 border-b border-neutral-200">
       <div className="container flex justify-between items-center">
-        <Link to="/" className="flex items-center space-x-2">
+        <Link to="/" onClick={handleNavClick} className="flex items-center space-x-2">
           <span className="text-2xl font-bold">
             b<sup>2</sup>
           </span>
@@ -23,23 +31,23 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <Link to="/" className="text-neutral-800 hover:text-coral-500 transition-colors">
+          <Link to="/" onClick={handleNavClick} className="text-neutral-800 hover:text-coral-500 transition-colors">
             Home
           </Link>
-          <Link to="/how-we-work" className="text-neutral-800 hover:text-coral-500 transition-colors">
+          <Link to="/how-we-work" onClick={handleNavClick} className="text-neutral-800 hover:text-coral-500 transition-colors">
             How We Work
           </Link>
-          <Link to="/services" className="text-neutral-800 hover:text-coral-500 transition-colors">
+          <Link to="/services" onClick={handleNavClick} className="text-neutral-800 hover:text-coral-500 transition-colors">
             Services
           </Link>
-          <Link to="/pricing" className="text-neutral-800 hover:text-coral-500 transition-colors">
+          <Link to="/pricing" onClick={handleNavClick} className="text-neutral-800 hover:text-coral-500 transition-colors">
             Pricing
           </Link>
-          <Link to="/about" className="text-neutral-800 hover:text-coral-500 transition-colors">
+          <Link to="/about" onClick={handleNavClick} className="text-neutral-800 hover:text-coral-500 transition-colors">
             About
           </Link>
           <Button asChild>
-            <Link to="/contact">Book a Free Audit</Link>
+            <Link to="/contact" onClick={handleNavClick}>Book a Free Audit</Link>
           </Button>
         </nav>
 
@@ -71,43 +79,23 @@ const Header = () => {
               </button>
             </div>
             <nav className="container py-8 flex flex-col space-y-6">
-              <Link
-                to="/"
-                className="text-xl text-neutral-800"
-                onClick={toggleMenu}
-              >
+              <Link to="/" onClick={handleNavClick} className="text-xl text-neutral-800">
                 Home
               </Link>
-              <Link
-                to="/how-we-work"
-                className="text-xl text-neutral-800"
-                onClick={toggleMenu}
-              >
+              <Link to="/how-we-work" onClick={handleNavClick} className="text-xl text-neutral-800">
                 How We Work
               </Link>
-              <Link
-                to="/services"
-                className="text-xl text-neutral-800"
-                onClick={toggleMenu}
-              >
+              <Link to="/services" onClick={handleNavClick} className="text-xl text-neutral-800">
                 Services
               </Link>
-              <Link
-                to="/pricing"
-                className="text-xl text-neutral-800"
-                onClick={toggleMenu}
-              >
+              <Link to="/pricing" onClick={handleNavClick} className="text-xl text-neutral-800">
                 Pricing
               </Link>
-              <Link
-                to="/about"
-                className="text-xl text-neutral-800"
-                onClick={toggleMenu}
-              >
+              <Link to="/about" onClick={handleNavClick} className="text-xl text-neutral-800">
                 About
               </Link>
               <Button asChild className="w-full">
-                <Link to="/contact" onClick={toggleMenu}>
+                <Link to="/contact" onClick={handleNavClick}>
                   Book a Free Audit
                 </Link>
               </Button>

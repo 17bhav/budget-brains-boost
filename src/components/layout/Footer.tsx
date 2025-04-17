@@ -1,6 +1,5 @@
-
 import { Link } from 'react-router-dom';
-import { Instagram, Linkedin, Mail } from 'lucide-react';
+import { Instagram, Linkedin, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -65,13 +64,19 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/budgetandbrains_/" className="text-neutral-600 hover:text-coral-500 transition-colors flex items-center gap-2">
+                <a href="tel:+919971653396" className="text-neutral-600 hover:text-coral-500 transition-colors flex items-center gap-2">
+                  <Phone size={18} />
+                  +91 9971653396
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/budgetandbrains_/" target="_blank" rel="noopener noreferrer" className="text-neutral-600 hover:text-coral-500 transition-colors flex items-center gap-2">
                   <Instagram size={18} />
                   <span>Instagram</span>
                 </a>
               </li>
               <li>
-                <a href="https://linkedin.com/company/budgetandbrains" className="text-neutral-600 hover:text-coral-500 transition-colors flex items-center gap-2">
+                <a href="https://linkedin.com/company/budgetandbrains" target="_blank" rel="noopener noreferrer" className="text-neutral-600 hover:text-coral-500 transition-colors flex items-center gap-2">
                   <Linkedin size={18} />
                   <span>LinkedIn</span>
                 </a>

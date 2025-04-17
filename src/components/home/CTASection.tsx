@@ -1,4 +1,3 @@
-
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -18,7 +17,7 @@ const CTASection = () => {
                 Book a Free Audit
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-coral-500">
               <Link to="/contact" className="text-base flex items-center">
                 Tell Us About Your Startup <ArrowRight size={18} className="ml-2" />
               </Link>

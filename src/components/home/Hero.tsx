@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRightIcon } from 'lucide-react';
@@ -37,18 +36,18 @@ const Hero = () => {
         <div className="container text-center">
           <p className="text-neutral-600 mb-6">Trusted by innovative startups</p>
           <div className="flex flex-wrap justify-center gap-8 md:gap-16">
-            <div className="w-32 h-18 flex items-center justify-center">
+            <a href="https://www.theknack.in/" target="_blank" rel="noopener noreferrer" className="w-32 h-18 flex items-center justify-center">
               <img src="/lovable-uploads/8216d696-de94-4a5e-8ed3-b11a3334d602.png" alt="The Knack" className="max-h-full w-auto" />
-            </div>
-            <div className="w-36 h-18 flex items-center justify-center">
+            </a>
+            <a href="https://www.instagram.com/vrindavanhandloom/" target="_blank" rel="noopener noreferrer" className="w-36 h-18 flex items-center justify-center">
               <img src="/lovable-uploads/b1374e63-2dca-4290-b104-55720919c1c6.png" alt="Vrindavan Handlooms" className="max-h-full w-auto" />
-            </div>
-            <div className="w-32 h-18 flex items-center justify-center">
+            </a>
+            <a href="https://www.withsukoon.com/" target="_blank" rel="noopener noreferrer" className="w-32 h-18 flex items-center justify-center">
               <img src="/lovable-uploads/cfcaacd1-e119-4500-b9dc-eb6dd70895a6.png" alt="SUKOON" className="max-h-full w-auto" />
-            </div>
-            <div className="w-32 h-18 flex items-center justify-center">
+            </a>
+            <a href="https://www.gnhhotels.com/" target="_blank" rel="noopener noreferrer" className="w-32 h-18 flex items-center justify-center">
               <img src="/lovable-uploads/b941cf0b-62d3-404d-beb3-98ce2a95bec9.png" alt="GNH Group" className="max-h-full w-auto" />
-            </div>
+            </a>
           </div>
         </div>
       </div>
