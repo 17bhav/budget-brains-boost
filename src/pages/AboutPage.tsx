@@ -23,7 +23,7 @@ const AboutPage = () => {
               <h2 className="text-3xl font-semibold mb-6">Our Story</h2>
               <div className="space-y-4 text-lg">
                 <p>
-                  Budget & Brains was born from frustration. After years of watching startups waste precious funding on ineffective marketing, we decided there had to be a better way.
+                  Budget & Brains was born from a realisation. After years of watching startups waste precious funding on ineffective marketing, we decided there had to be a better way.
                 </p>
                 <p>
                   Many early-stage companies struggle with the same challenges: limited budgets, pressure to show growth, and confusion about where to focus their marketing efforts. Too often, they end up spending too much on the wrong channels or hiring expensive agencies that don't understand the unique constraints of startup life.
