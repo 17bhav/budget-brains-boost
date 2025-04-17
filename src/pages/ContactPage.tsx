@@ -10,7 +10,6 @@ const ContactPage = () => {
     email: '',
     company: '',
     website: '',
-    budget: '',
     message: '',
   });
   
@@ -39,7 +38,6 @@ const ContactPage = () => {
         email: '',
         company: '',
         website: '',
-        budget: '',
         message: '',
       });
     }, 1500);
@@ -71,8 +69,8 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-medium mb-1">Email</h3>
-                      <a href="mailto:hello@budgetandbrains.com" className="text-coral-500 hover:underline">
-                        hello@budgetandbrains.com
+                      <a href="mailto:bhavika@budgetandbrains.com" className="text-coral-500 hover:underline">
+                        bhavika@budgetandbrains.com
                       </a>
                     </div>
                   </div>
@@ -83,8 +81,8 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-medium mb-1">Phone</h3>
-                      <a href="tel:+15551234567" className="text-coral-500 hover:underline">
-                        +1 (555) 123-4567
+                      <a href="tel:+919971653396" className="text-coral-500 hover:underline">
+                        +91 9971653396
                       </a>
                     </div>
                   </div>
@@ -177,24 +175,6 @@ const ContactPage = () => {
                     </div>
                   </div>
                   
-                  <div>
-                    <label htmlFor="budget" className="block mb-2 font-medium">
-                      Monthly Marketing Budget
-                    </label>
-                    <select
-                      id="budget"
-                      name="budget"
-                      value={formData.budget}
-                      onChange={handleChange}
-                      className="w-full px-4 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coral-500"
-                    >
-                      <option value="">Select a range</option>
-                      <option value="under-5k">Under $5,000/month</option>
-                      <option value="5k-15k">$5,000 - $15,000/month</option>
-                      <option value="15k-30k">$15,000 - $30,000/month</option>
-                      <option value="over-30k">Over $30,000/month</option>
-                    </select>
-                  </div>
                   
                   <div>
                     <label htmlFor="message" className="block mb-2 font-medium">
