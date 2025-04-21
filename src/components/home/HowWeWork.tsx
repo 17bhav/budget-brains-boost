@@ -1,87 +1,66 @@
-import { Clock, Globe, MessageSquare, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
 const HowWeWork = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <section className="section">
+    <section className="py-16 md:py-24 bg-neutral-50">
       <div className="container">
-        <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="section-title">How We Work</h2>
-          <p className="section-subtitle">
-            Our remote-first, async culture allows us to provide flexible and efficient marketing consultation for your startup.
+        <div className="text-center">
+          <h2 className="section-title">Our Approach</h2>
+          <p className="section-subtitle mx-auto">
+            We focus on data-driven strategies and transparent communication to deliver measurable results.
           </p>
-          <Button asChild className="mt-6">
-            <Link to="/how-we-work">Learn More About Our Approach</Link>
-          </Button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-          <div className="bg-white p-6 rounded-lg border border-neutral-200 card-hover">
-            <div className="flex items-start">
-              <div className="mr-4">
-                <Globe className="text-coral-500" size={24} />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Remote-first, Async Culture</h3>
-                <p className="text-neutral-600">
-                  Work with marketing experts from around the world, benefiting from diverse perspectives and time zone coverage.
-                </p>
-              </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+          {/* Step 1 */}
+          <div className="text-center card-hover">
+            <div className="w-16 h-16 mx-auto rounded-full bg-coral-100 text-coral-500 flex items-center justify-center text-2xl font-semibold mb-4">
+              1
             </div>
+            <h3 className="text-xl font-semibold mb-2">Audit & Analysis</h3>
+            <p className="text-neutral-600">
+              We start by understanding your current marketing efforts and identifying areas for improvement.
+            </p>
           </div>
 
-          <div className="bg-white p-6 rounded-lg border border-neutral-200 card-hover">
-            <div className="flex items-start">
-              <div className="mr-4">
-                <Users className="text-coral-500" size={24} />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Profit-sharing Team Model</h3>
-                <p className="text-neutral-600">
-                  Our team is incentivized by your success. We share in the results we help create, aligning our goals with yours.
-                </p>
-              </div>
+          {/* Step 2 */}
+          <div className="text-center card-hover">
+            <div className="w-16 h-16 mx-auto rounded-full bg-coral-100 text-coral-500 flex items-center justify-center text-2xl font-semibold mb-4">
+              2
             </div>
+            <h3 className="text-xl font-semibold mb-2">Strategy & Planning</h3>
+            <p className="text-neutral-600">
+              Next, we develop a customized marketing strategy tailored to your specific goals and budget.
+            </p>
           </div>
 
-          <div className="bg-white p-6 rounded-lg border border-neutral-200 card-hover">
-            <div className="flex items-start">
-              <div className="mr-4">
-                <Clock className="text-coral-500" size={24} />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Work from Anywhere, Anytime</h3>
-                <p className="text-neutral-600">
-                  Flexible scheduling means you get support when you need it, without rigid 9-to-5 constraints.
-                </p>
-              </div>
+          {/* Step 3 */}
+          <div className="text-center card-hover">
+            <div className="w-16 h-16 mx-auto rounded-full bg-coral-100 text-coral-500 flex items-center justify-center text-2xl font-semibold mb-4">
+              3
             </div>
-          </div>
-
-          <div className="bg-white p-6 rounded-lg border border-neutral-200 card-hover">
-            <div className="flex items-start">
-              <div className="mr-4">
-                <MessageSquare className="text-coral-500" size={24} />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Daily Async Briefs + Weekly 1:1s</h3>
-                <p className="text-neutral-600">
-                  Stay updated through daily asynchronous communication, complemented by focused weekly one-on-one sessions.
-                </p>
-              </div>
-            </div>
+            <h3 className="text-xl font-semibold mb-2">Execution & Optimization</h3>
+            <p className="text-neutral-600">
+              Finally, we implement the strategy and continuously optimize performance based on data and insights.
+            </p>
           </div>
         </div>
+      </div>
 
-        <div className="mt-12 bg-coral-50 rounded-lg p-8 border border-coral-100">
+      <div className="container mt-20">
+        <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8 md:p-12">
           <div className="text-center">
-            <h3 className="text-2xl font-semibold mb-4">Built by marketers tired of wasted budgets.</h3>
-            <p className="text-lg text-neutral-600 mb-6">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">Built by Marketers Tired of Wasted Budgets</h3>
+            <p className="text-neutral-600 mb-6">
               We've been there. We've seen the waste. And we've built a better way forward for startups that need smart growth.
             </p>
             <Button asChild>
-              <Link to="/about">About Us</Link>
+              <Link to="/about" onClick={scrollToTop}>About Us</Link>
             </Button>
           </div>
         </div>
