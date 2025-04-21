@@ -1,4 +1,3 @@
-
 import { Clock, Globe, MessageSquare, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -82,7 +81,7 @@ const HowWeWork = () => {
               We've been there. We've seen the waste. And we've built a better way forward for startups that need smart growth.
             </p>
             <Button asChild>
-              <Link to="/about">Meet Our Team</Link>
+              <Link to="/about">About Us</Link>
             </Button>
           </div>
         </div>

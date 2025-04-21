@@ -17,7 +17,7 @@ const CTASection = () => {
                 Book a Free Audit
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-coral-500">
+            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/20">
               <Link to="/contact" className="text-base flex items-center">
                 Tell Us About Your Startup <ArrowRight size={18} className="ml-2" />
               </Link>
