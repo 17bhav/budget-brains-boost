@@ -80,9 +80,7 @@ const AboutPage = () => {
                 Let's discuss how Budget & Brains can help your startup achieve smarter, more efficient growth.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Button asChild size="lg">
-                  <Link to="/contact">Book a Free Audit</Link>
-                </Button>
+               
                 <Button asChild variant="secondary" size="lg">
                   <Link to="/contact">Contact Us</Link>
                 </Button>

@@ -12,6 +12,7 @@ const ContactPage = () => {
     company: '',
     website: '',
     message: '',
+
   });
   
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -113,9 +114,6 @@ const ContactPage = () => {
                     <p className="mb-4">
                       Fill out the form to book your free 30-minute marketing audit with one of our experts.
                     </p>
-                    <Button asChild variant="secondary" className="w-full">
-                      <a href="#contactForm">Book Now</a>
-                    </Button>
                   </div>
                 </div>
               </div>
