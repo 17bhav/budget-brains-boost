@@ -40,13 +40,13 @@ const Hero = () => {
         <div className="container text-center">
           <p className="text-neutral-600 mb-6">Trusted by innovative startups</p>
           <div className="flex flex-wrap justify-center gap-8 md:gap-16">
-            <a href="https://www.theknack.in/" target="_blank" rel="noopener noreferrer" className="w-32 h-18 flex items-center justify-center">
+            <a href= "https://www.withsukoon.com/" target="_blank" rel="noopener noreferrer" className="w-32 h-18 flex items-center justify-center">
               <img src="/lovable-uploads/8216d696-de94-4a5e-8ed3-b11a3334d602.png" alt="The Knack" className="max-h-full w-auto" />
             </a>
             <a href="https://www.instagram.com/vrindavanhandloom/" target="_blank" rel="noopener noreferrer" className="w-36 h-18 flex items-center justify-center">
               <img src="/lovable-uploads/b1374e63-2dca-4290-b104-55720919c1c6.png" alt="Vrindavan Handlooms" className="max-h-full w-auto" />
             </a>
-            <a href="https://www.withsukoon.com/" target="_blank" rel="noopener noreferrer" className="w-32 h-18 flex items-center justify-center">
+            <a href="https://www.theknack.in/" target="_blank" rel="noopener noreferrer" className="w-32 h-18 flex items-center justify-center">
               <img src="/lovable-uploads/cfcaacd1-e119-4500-b9dc-eb6dd70895a6.png" alt="SUKOON" className="max-h-full w-auto" />
             </a>
             <a href="https://www.gnhhotels.com/" target="_blank" rel="noopener noreferrer" className="w-32 h-18 flex items-center justify-center">
