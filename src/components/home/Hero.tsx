@@ -11,16 +11,14 @@ const Hero = () => {
     <section className="pt-16 lg:pt-20">
       <div className="container">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-block text-sm font-medium px-4 py-2 rounded-full bg-coral-100 text-coral-600 mb-6 animate-fade-in">
-            Marketing Consultancy for Startups & Early-Stage Companies
-          </span>
+            <h3 className="inline-block text-sm font-medium px-4 py-2 rounded-full bg-coral-100 text-coral-600 mb-6 animate-fade-in">Marketing Consultancy for Startups & Early-Stage Companies</h3>
           <h1 className="title animate-fade-in" style={{ animationDelay: '0.1s' }}>
             Smart Marketing. <br className="hidden sm:block" />
             <span className="text-coral-500">Scalable Growth.</span>
           </h1>
-          <p className="subtitle mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <h2 className="subtitle mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
             We help you market better without burning your budget.
-          </p>
+          </h2>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-10 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <Button asChild size="lg">
               <Link to="/contact" onClick={scrollToTop} className="text-base">
