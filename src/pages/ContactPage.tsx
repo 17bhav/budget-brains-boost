@@ -10,7 +10,7 @@ const ContactPage = () => {
     name: '',
     email: '',
     company: '',
-    website: '',
+    contact: '',
     message: '',
 
   });
@@ -25,19 +25,21 @@ const ContactPage = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-  
-    const { data, error } = await supabase.from('contact_messages').insert([formData]);
-  
-    
-    
-    if (error) {
-      toast.error('Something went wrong', {
-        description: error.message,
-      });
-    } else {
+// filepath: /Users/kashish/Documents/Budget and brains /budget-brains-boost/src/pages/ContactPage.tsx
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  try {
+    const response = await fetch('http://localhost:8080/api/contact/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
       toast.success('Your message has been sent!', {
         description: "We'll get back to you within 24 hours.",
       });
@@ -45,14 +47,23 @@ const ContactPage = () => {
         name: '',
         email: '',
         company: '',
-        website: '',
+        contact: '',
         message: '',
       });
+    } else {
+      const errorData = await response.json();
+      toast.error('Something went wrong', {
+        description: errorData.message || 'Failed to submit the form.',
+      });
     }
-  
+  } catch (error) {
+    toast.error('Something went wrong', {
+      description: error.message,
+    });
+  } finally {
     setIsSubmitting(false);
-  };
-
+  }
+};
   return (
     <main>
       <section className="pt-24 pb-16 bg-neutral-50">
@@ -147,6 +158,8 @@ const ContactPage = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
+                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" // Regex for email validation
+                        title="Please enter a valid email address"
                         className="w-full px-4 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coral-500"
                       />
                     </div>
@@ -168,15 +181,19 @@ const ContactPage = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="website" className="block mb-2 font-medium">
-                        Website
+                      <label htmlFor="contact" className="block mb-2 font-medium">
+                        Contact <span className="text-coral-500">*</span>
                       </label>
                       <input
                         type="text"
-                        id="website"
-                        name="website"
-                        value={formData.website}
+                        inputMode="numeric" 
+                        id="contact"
+                        name="contact"
+                        value={formData.contact}
                         onChange={handleChange}
+                        required
+                        pattern="^\d{10}$" // Regex for a 10-digit number
+                        title="Please enter a valid 10-digit phone number"
                         className="w-full px-4 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coral-500"
                       />
                     </div>
