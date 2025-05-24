@@ -31,7 +31,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   setIsSubmitting(true);
 
   try {
-    const response = await fetch('http://16.171.198.79:8080/api/contact/submit', {
+    const response = await fetch('https://16.171.198.79:8080/api/contact/submit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
