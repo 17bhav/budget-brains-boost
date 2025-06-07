@@ -31,12 +31,19 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   setIsSubmitting(true);
 
   try {
-    const response = await fetch('https://api.budgetandbrains.com/api/contact/submit', {
+    const response = await fetch('https://formsubmit.co/bhavika17mehta@gmail.com', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: JSON.stringify(formData),
+      body: new URLSearchParams({
+        name: formData.name,
+        email: formData.email,
+        company: formData.company,
+        contact: formData.contact,
+        message: formData.message,
+        _captcha: 'false' // optional: disables their default CAPTCHA
+      }),
     });
 
     if (response.ok) {
@@ -51,12 +58,11 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         message: '',
       });
     } else {
-      const errorData = await response.json();
       toast.error('Something went wrong', {
-        description: errorData.message || 'Failed to submit the form.',
+        description: 'Failed to submit the form.',
       });
     }
-  } catch (error) {
+  } catch (error: any) {
     toast.error('Something went wrong', {
       description: error.message,
     });
