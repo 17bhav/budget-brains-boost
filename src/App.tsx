@@ -11,11 +11,12 @@ import ServicesPage from "./pages/ServicesPage";
 import PricingPage from "./pages/PricingPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import BlogPage from "./pages/BlogPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-import ScrollToTop from "./components/home/ScrollToTop"; // Adjust path as needed
+import ScrollToTop from "./components/home/ScrollToTop";
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -32,6 +33,7 @@ const App = () => (
             <Route path="/pricing" element={<PricingPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/blog" element={<BlogPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -46,6 +47,9 @@ const Header = () => {
           <Link to="/about" onClick={handleNavClick} className="text-neutral-800 hover:text-coral-500 transition-colors">
             About
           </Link>
+          <Link to="/blog" onClick={handleNavClick} className="text-neutral-800 hover:text-coral-500 transition-colors">
+            Blog
+          </Link>
           <Button asChild>
             <Link to="/contact" onClick={handleNavClick}>Book a Free Audit</Link>
           </Button>
@@ -93,6 +97,9 @@ const Header = () => {
               </Link>
               <Link to="/about" onClick={handleNavClick} className="text-xl text-neutral-800">
                 About
+              </Link>
+              <Link to="/blog" onClick={handleNavClick} className="text-xl text-neutral-800">
+                Blog
               </Link>
               <Button asChild className="w-full">
                 <Link to="/contact" onClick={handleNavClick}>
