@@ -25,7 +25,7 @@ const PricingPage = () => {
               <h2 className="text-2xl font-semibold mb-2">One-time Audit</h2>
               <div className="mt-4 mb-6">
                 <span className="text-lg font-medium">Starts from</span><br />
-                <span className="text-4xl font-bold text-neutral-600">INR 20,000</span>
+                <span className="text-4xl font-bold text-neutral-600">USD 1,000</span>
               </div>
               <p className="text-neutral-600 mb-6">
                 Complete assessment of your current marketing efforts with actionable recommendations.
@@ -75,7 +75,7 @@ const PricingPage = () => {
               <h2 className="text-2xl font-semibold mb-2">Monthly Advisory</h2>
               <div className="mt-4 mb-6">
                 <span className="text-lg font-medium">Starts from</span><br />
-                <span className="text-4xl font-bold text-neutral-400">INR 5,000</span>
+                <span className="text-4xl font-bold text-neutral-400">USD 500</span>
               </div>
               <p className="text-neutral-300 mb-6">
                 Ongoing guidance and support to implement and optimize your marketing strategy.
