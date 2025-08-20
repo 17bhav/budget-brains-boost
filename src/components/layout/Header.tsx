@@ -35,9 +35,6 @@ const Header = () => {
           <Link to="/" onClick={handleNavClick} className="text-neutral-800 hover:text-coral-500 transition-colors">
             Home
           </Link>
-          <Link to="/how-we-work" onClick={handleNavClick} className="text-neutral-800 hover:text-coral-500 transition-colors">
-            How We Work
-          </Link>
           <Link to="/services" onClick={handleNavClick} className="text-neutral-800 hover:text-coral-500 transition-colors">
             Services
           </Link>
@@ -85,9 +82,6 @@ const Header = () => {
             <nav className="container py-8 flex flex-col space-y-6">
               <Link to="/" onClick={handleNavClick} className="text-xl text-neutral-800">
                 Home
-              </Link>
-              <Link to="/how-we-work" onClick={handleNavClick} className="text-xl text-neutral-800">
-                How We Work
               </Link>
               <Link to="/services" onClick={handleNavClick} className="text-xl text-neutral-800">
                 Services
